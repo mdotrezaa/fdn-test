@@ -1,0 +1,57 @@
+nav{
+}
+.top-bar{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: max-content 15% auto 15%;
+  grid-template-areas: "burger logo menus toggler";
+  justify-items: stretch;
+  align-items: center ;
+  column-gap: 20px;
+}
+.bottom-bar{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.bottom-bar ul{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.bottom-bar ul li{
+  list-style: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.logo{
+  width: 100%;
+}
+.menu-icon{
+  font-size: 24px;
+}
+.form-search i {
+  position: absolute;
+  display: inherit;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 3%;
+}
+
+#item4{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

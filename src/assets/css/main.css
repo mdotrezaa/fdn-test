@@ -1,0 +1,46 @@
+@import url("./elements/button.css");
+@import url("./elements/text.css");
+@import url("./compoenents/navigation.css");
+@import url("./compoenents/card.css");
+:root{
+    --main-color:#DB234C;
+    --second-color:#FDDAE0;
+    --white-color:#ffffff;
+    --black-color:#2d2d2d;
+    --grey-color:#D8D8D8;
+}
+.wrap{
+    width: 1140px;
+    margin: auto;
+}
+.grid{
+    display: grid;
+    gap: 20px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.two-column{
+    grid-template-columns: 1fr 2fr;
+    padding: 50px 100px;
+}
+.full-section{
+    width: 100%;
+    background: url("../images/bg1.jpg") no-repeat;
+    background-position: bottom left;
+    background-color: var(--second-color);
+    min-height: 300px;
+}
+.ads--tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: var(--grey-color);
+    border: 1px solid #ccc;
+}
+.ads--tag span{
+    font-size: 24px;
+    font-weight: 700;
+}
