@@ -2,7 +2,7 @@ import { GET_EDITOR } from "../types";
 
 const initialState = {
   reviews: false,
-  loading: true,
+  loading: true
 };
 
 export const reviewReducers = (state = initialState, { type, payload }) => {
@@ -10,8 +10,8 @@ export const reviewReducers = (state = initialState, { type, payload }) => {
     case GET_EDITOR:
       return {
         ...state,
-        reviews: payload,
-        loading: false,
+        reviews: payload["latest review"],
+        loading: false
       };
 
     default:

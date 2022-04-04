@@ -1,23 +1,24 @@
 import logo from "../assets/images/FD-Logo-Pink.png";
+import Button from "./elements/button";
 function Nav(props) {
   return (
     <nav>
-      <div className="top-bar">
-        <div id="item1" className="menu-icon">
-          <i className="bx bx-menu menu-icon"></i>
+      <div className='top-bar'>
+        <div id='item1' className='menu-icon'>
+          <i className='bx bx-menu menu-icon'></i>
         </div>
-        <div id="item2">
-          <img className="logo" src={logo} />
+        <div id='item2'>
+          <img className='logo' src={logo} />
         </div>
-        <div id="item3" className="form-search">
-          <i class="bx bx-search icon"></i>
-          <input className="input-field" type="search" placeholder="Search" />
+        <div id='item3' className='form-search'>
+          <i class='bx bx-search icon'></i>
+          <input className='input-field' type='search' placeholder='Search' />
         </div>
-        <div id="item4">
-          <button className="btn-login">Login/Register</button>
+        <div id='item4'>
+          <Button variant='login'>Login/Register</Button>
         </div>
       </div>
-      <div className="bottom-bar">
+      <div className='bottom-bar'>
         <ul>
           <li>Skincare</li>
           <li>Make Up</li>
