@@ -1,5 +1,6 @@
 @import url("./elements/button.css");
 @import url("./elements/text.css");
+@import url("./elements/layout.css");
 @import url("./compoenents/navigation.css");
 @import url("./compoenents/card.css");
 :root{
@@ -28,6 +29,8 @@ hr{
 }
 .center{
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .space-between{
     justify-content: space-between;
@@ -45,6 +48,13 @@ hr{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,2fr);
 }
+.three-column .item1{
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+}
+.four-column{
+    grid-template-columns: repeat(4,1fr);
+}
 .full-section{
     width: 100%;
     background: url("../images/bg1.jpg") no-repeat;
@@ -52,16 +62,7 @@ hr{
     background-color: var(--second-color);
     min-height: 300px;
 }
-.slider-block{
-    scroll-behavior: smooth;
-    scrollbar-width:none;
-    overflow-x: scroll;
-    display: grid;
-    grid-auto-columns: 50%;
-    grid-auto-flow: column;
-    padding-right: 10px;
-    padding-bottom: 80px;
-}
+
 .article .thumbnail{
     width: 100%;
     border-radius: 5px;

@@ -5,7 +5,7 @@ function Card(props) {
     <>
       {props.type == "editor" ? (
         props.data.map((item, index) => (
-          <div key={index} className='card'>
+          <div key={index} className={`card ${props.className}`}>
             <div className='card-top'>
               <img
                 className='profile'
@@ -51,7 +51,7 @@ function Card(props) {
         ))
       ) : props.type == "review" ? (
         props.data.map((item, index) => (
-          <div key={index} className='card'>
+          <div key={index} className={`card ${props.className}`}>
             <div className='card-body'>
               <div className='card-description'>
                 <img className='card-thumbnail' src={item.product.image} />
@@ -96,7 +96,7 @@ function Card(props) {
           </div>
         ))
       ) : (
-        <div className='card'>{props.children}</div>
+        <div className={`card ${props.className}`}>{props.children}</div>
       )}
     </>
   );

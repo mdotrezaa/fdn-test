@@ -4,6 +4,31 @@
     gap: 10px;
     margin: 80px 0;
 }
+.slider-block{
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-auto-flow: column;
+    padding-right: 10px;
+    gap: 0 10px;
+    padding-bottom: 80px;
+}
+.slider-block-item{
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-columns: 17%;
+    grid-auto-flow: column;
+    padding-right: 71px;
+    gap: 0 10px;
+}
+.slider-block::-webkit-scrollbar, .slider-block-item::-webkit-scrollbar{
+    width: 0;
+}
+.card-shadow{
+    box-shadow: 4px 8px 24px rgba(45, 45, 45, 0.15);
+}
 .card{
     border: 1px solid var(--grey-color);
     border-radius: 10px;
@@ -45,7 +70,7 @@
 .card-body .review-card{
     display: flex;
     align-items: center;
-    gap: 0 10px;
+    gap: 0 5px;
 }
 .card-body .card-thumbnail{
     display: flex;
